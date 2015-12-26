@@ -1,0 +1,106 @@
+{
+  "name": "Car",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    },
+    "oddEven": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "totalSeats": {
+      "type": "number"
+    },
+    "seatsLeft": {
+      "type": "number"
+    },
+    "usersInCar": {
+      "type": "string"
+    },
+    "isSun": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isMon": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isTue": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isWed": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isThu": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isFri": {
+      "type": "boolean",
+	  "default": false
+    },
+    "isSat": {
+      "type": "boolean",
+	  "default": false
+    },
+    "startHr": {
+      "type": "number"
+    },
+    "startMin": {
+      "type": "number"
+    },
+    "startAMPM": {
+      "type": "string"
+    },
+    "endHr": {
+      "type": "number"
+    },
+    "endMin": {
+      "type": "number"
+    },
+    "endAMPM": {
+      "type": "string"
+    },
+    "startPlace": {
+      "type": "string"
+    },
+    "endPlace": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+	  "default": true
+    },
+    "isDeleted": {
+      "type": "boolean",
+	  "default": false
+    },
+	
+	"createdOn": {
+		"type": "date",
+		"dataType": "timestamp",
+		"defaultFn": "now"
+	},
+	"ModifiedOn": {
+		"type": "date",
+		"dataType": "timestamp"
+	}
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -14,22 +14,26 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "rakLocalMysql"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "rakLocalMysql",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "rakLocalMysql",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "rakLocalMysql",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "rakLocalMysql",
     "public": false
+  },
+  "Car": {
+    "dataSource": "rakLocalMysql",
+    "public": true
   }
 }
