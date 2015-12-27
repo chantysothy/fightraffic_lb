@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "./node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -32,8 +33,20 @@
     "dataSource": "rakLocalMysql",
     "public": false
   },
+  "UserCredential": {
+    "dataSource": "rakLocalMysql",
+    "public": false
+  },
+  "UserIdentity": {
+    "dataSource": "rakLocalMysql",
+    "public": false
+  },
   "Car": {
     "dataSource": "rakLocalMysql",
     "public": true
+  },
+  "user": {
+    "dataSource": "rakLocalMysql",
+    "public": false
   }
 }

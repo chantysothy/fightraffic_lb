@@ -12,7 +12,20 @@
       }
     }
   },
-  "session": {},
+  "session:before": {
+    "cookie-parser": {
+      "params": "kyubatau"
+    }
+  },
+  "session": {
+    "express-session": {
+      "params": {
+        "secret": "kyubatauyebhi",
+        "saveUninitialized": true,
+        "resave": true
+      }
+    }
+  },
   "auth": {},
   "parse": {},
   "routes": {
@@ -22,7 +35,11 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },

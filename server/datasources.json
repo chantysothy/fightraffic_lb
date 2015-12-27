@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "rakLocalMysql": {
-    "name": "rakLocalMysql",
-    "connector": "mysql",
-	"host": "us-cdbr-iron-east-03.cleardb.net",
+    "host": "localhost",
     "port": 3306,
-    "database": "heroku_23d75c216661491",
-    "username": "bb78b00ab11c7e",
-    "password": "fab6916f"
+    "database": "fightraffic_lb",
+    "username": "root",
+    "password": "",
+    "name": "rakLocalMysql",
+    "connector": "mysql"
   }
 }
