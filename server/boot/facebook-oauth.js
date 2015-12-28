@@ -12,4 +12,6 @@ module.exports = function(app) {
   });
   passportConfigurator.configureProvider('facebook-login',
     require('../../providers.json')['facebook-login']);
+  passportConfigurator.configureProvider('google-login',
+    require('../../providers.json')['google-login']);
 };

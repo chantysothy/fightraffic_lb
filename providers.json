@@ -11,5 +11,19 @@
     "failureRedirect": "/login",
     "scope": ["email"],
     "failureFlash": true
+  },
+  "google-login": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "44712277431-s6a690agtt16399iqkksfagc0ppvk4sl.apps.googleusercontent.com",
+    "clientSecret": "MHkMjNaX0lN93Hx0uA2l0RBP",
+    "callbackURL": "/auth/google/callback",
+    "authPath": "/auth/google",
+    "callbackPath": "/auth/google/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email", "profile"],
+    "failureFlash": true
   }
 }

@@ -18,6 +18,7 @@
     "loopback-connector-mysql": "^2.2.0",
     "loopback-datasource-juggler": "^2.39.0",
     "passport-facebook": "^2.0.0",
+    "passport-google-oauth": "^0.2.0",
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {
