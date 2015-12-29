@@ -77,6 +77,15 @@
     "endPlace": {
       "type": "string"
     },
+    "milage": {
+      "type": "number"
+    },
+    "distance": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
     "isActive": {
       "type": "boolean",
       "default": true
@@ -98,14 +107,8 @@
   "validations": [],
   "relations": {
     "owner": {
-      "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "ownerId"
-    },
-    "usersInCar": {
-      "type": "hasAndBelongsToMany",
-      "model": "user",
-      "foreignKey": "goingInCars"
+      "type": "hasOne",
+      "model": "user"
     }
   },
   "acls": [
@@ -123,6 +126,12 @@
     },
     {
       "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"

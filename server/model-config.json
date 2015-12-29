@@ -15,7 +15,8 @@
     ]
   },
   "User": {
-    "dataSource": "rakLocalMysql"
+    "dataSource": "rakLocalMysql",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "rakLocalMysql",
@@ -47,6 +48,6 @@
   },
   "user": {
     "dataSource": "rakLocalMysql",
-    "public": false
+    "public": true
   }
 }
