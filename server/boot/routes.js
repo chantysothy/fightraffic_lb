@@ -1,7 +1,7 @@
 module.exports = function(app) {
     app.get('/auth/account', function(req, res) {
         console.log(req.accessToken);
-		res.redirect('http://localhost:8101/?access_token='+req.accessToken.id);
+		res.redirect('http://localhost:8100/?access_token='+req.accessToken.id);
     });
 	
 	//log a user out
