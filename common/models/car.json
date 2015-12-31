@@ -25,10 +25,10 @@
     "seatsLeft": {
       "type": "number"
     },
-	"travelDay": {
+    "travelDay": {
       "type": "string"
     },
-	"travelDate": {
+    "travelDate": {
       "type": "date",
       "dataType": "timestamp"
     },

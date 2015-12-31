@@ -42,6 +42,10 @@
     "dataSource": "rakLocalMysql",
     "public": false
   },
+  "userIdentity": {
+    "dataSource": "rakLocalMysql",
+    "public": true
+  },
   "Car": {
     "dataSource": "rakLocalMysql",
     "public": true
