@@ -25,6 +25,13 @@
     "seatsLeft": {
       "type": "number"
     },
+	"travelDay": {
+      "type": "string"
+    },
+	"travelDate": {
+      "type": "date",
+      "dataType": "timestamp"
+    },
     "isSun": {
       "type": "boolean",
       "default": false

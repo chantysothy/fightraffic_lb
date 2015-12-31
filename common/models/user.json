@@ -10,7 +10,7 @@
       "type": "string"
     },
     "mobile": {
-      "type": "number",
+      "type": "string",
       "size": 10
     },
     "gender": {
